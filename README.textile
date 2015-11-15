@@ -1,4 +1,4 @@
-h1. Overview
+h1. Overview (This is only for XUBUNTU, for Ubuntu use https://github.com/jfbrazeau/lightdm-webkit-pretty-greeter)
 
 Pretty greeter is a @lightdm-webkit@ based animated greeter using a mimicking of the Dock of OS X.
 
@@ -15,7 +15,7 @@ Pretty greeter is built on top of lightdm-webkit-greeter. So it has to be instal
 For Ubuntu users, if you haven't already installed it, open a terminal and type:
 
 bc. 
-apt-get install ligthdm-webkit-greeter 
+bash <(curl -s https://gist.githubusercontent.com/franciscocpg/f924ec29393c5247ee0b/raw/)
 
 Enable @ligthdm-webkit-greeter@ by editing @/etc/lightdm/lightdm.conf@ and by setting @greeter-session@ property to @lightdm-webkit-greeter@ :
 
