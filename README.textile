@@ -17,14 +17,6 @@ For Ubuntu users, if you haven't already installed it, open a terminal and type:
 bc. 
 bash <(curl -s https://gist.githubusercontent.com/franciscocpg/f924ec29393c5247ee0b/raw/)
 
-Enable @ligthdm-webkit-greeter@ by editing @/etc/lightdm/lightdm.conf@ and by setting @greeter-session@ property to @lightdm-webkit-greeter@ :
-
-bc. 
-[SeatDefaults]
-#greeter-session=lightdm-gtk-greeter
-greeter-session=lightdm-webkit-greeter
-user-session=xubuntu
-
 h2. Pretty greeter installation
 
 # Download "pretty greeter":https://github.com/jfbrazeau/lightdm-webkit-pretty-greeter/zipball/master
@@ -34,14 +26,7 @@ h2. Pretty greeter installation
 # Edit the resource @/etc/lightdm/lightdm-webkit-greeter.conf@ and set @webkit-theme@ property to @pretty@ :
 
 bc. 
-theme-name=Ambiance
-#webkit-theme=default
-webkit-theme=pretty
-font-name=Ubuntu 11
-xft-antialias=true
-xft-dpi=96
-xft-hintstyle=slight
-xft-rgba=rgb
+bash <(curl -s https://gist.githubusercontent.com/franciscocpg/b42d0566366f5ce1a39f/raw/)
 
 Now if you restart your computer (or at least if you restart lightdm), the pretty greeter should be activated. 
 
